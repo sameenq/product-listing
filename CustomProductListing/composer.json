@@ -1,0 +1,31 @@
+{
+    "name": "sq/custom-product-listing",
+    "description": "Custom Product Listing",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sameen Qayyum"
+        }
+    ],
+    "require": {
+        "shopware/core": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "CustomProductListing\\CustomProductListing",
+        "copyright": "(c) by sq",
+        "label": {
+            "de-DE": "Custom Product Listing",
+            "en-GB": "Custom Product Listing"
+        },
+        "description": {
+            "en-GB": "The plugin provides custom product listing."
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "CustomProductListing\\": "src/"
+        }
+    }
+}
