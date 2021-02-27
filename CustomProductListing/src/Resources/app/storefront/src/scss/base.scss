@@ -1,0 +1,42 @@
+@import 'style.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.counter .count {
+    min-width: 1rem;
+    @include center;
+}
+
+.counter .plus {
+    @include counter-button;
+    @include center;
+}
+
+.counter .minus {
+    @include counter-button;
+    @include center;
+    background-clip: padding-box;
+}
+
+div {
+    @include center;
+}
+
+.minus:hover,
+.plus:hover{
+    background-color: $sw-storefront-assets-color !important;
+}
+
+input{
+    border: 0;
+    width: 2%;
+}

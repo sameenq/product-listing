@@ -1,0 +1,10 @@
+{% sw_extends '@Storefront/storefront/component/product/card/action.html.twig' %}
+
+{% block page_product_detail_product_buy_meta %}
+  {{ parent() }}
+    <div class="counter mb-3">
+        <span class="minus bg-dark">-</span>
+        <input type="number" class="count" name="lineItems[{{ id }}][quantity]" value="1">
+        <span class="plus bg-dark">+</span>
+    </div>
+{% endblock %}

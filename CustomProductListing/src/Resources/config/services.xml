@@ -6,5 +6,8 @@
 
     <services>
       <!-- Services -->
+        <service id="CustomProductListing\Storefront\Controller\ListingController" public="true">
+            <argument id="Shopware\Storefront\Page\Navigation\NavigationPageLoader" type="service"/>
+        </service>
     </services>
 </container>

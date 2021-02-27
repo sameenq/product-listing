@@ -1,0 +1,15 @@
+@mixin counter-button {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+}
+
+@mixin center {
+    text-align: center;
+}
+
+$sw-storefront-assets-color: #c6153c;
