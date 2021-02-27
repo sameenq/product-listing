@@ -1,4 +1,5 @@
-@import 'style.scss';
+@import 'abstract/mixins/mixins.scss';
+@import 'abstract/variables/_custom.scss';
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
