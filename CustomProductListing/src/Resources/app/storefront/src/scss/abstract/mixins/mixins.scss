@@ -1,0 +1,18 @@
+/* Counter buttons */
+@mixin counter-button {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Align div content in the center */
+@mixin center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
