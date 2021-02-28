@@ -2,9 +2,23 @@
 
 {% block page_product_detail_product_buy_meta %}
   {{ parent() }}
-    <div class="counter mb-3">
-        <span class="minus bg-dark">-</span>
-        <input type="number" class="count" name="lineItems[{{ id }}][quantity]" value="1">
-        <span class="plus bg-dark">+</span>
+    <div class="input-group mb-3">
+        <input type="button"
+               value="-" class="minus bg-dark"
+               data-field="lineItems[{{ id }}][quantity]">
+        <input type="number"
+               class="quantity-field"
+               step="1"
+               max="{{ product.calculatedMaxPurchase }}"
+               min="{{ product.minPurchase }}"
+               value="{{ product.minPurchase }}"
+               name="lineItems[{{ id }}][quantity]">
+        <input type="button"
+               value="+"
+               class="plus bg-dark"
+               data-field="lineItems[{{ id }}][quantity]"
+               data-max-quantity="{{ product.calculatedMaxPurchase }}">
     </div>
 {% endblock %}
+
+

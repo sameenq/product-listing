@@ -16,6 +16,9 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class ListingController extends StorefrontController
 {
+    /**
+     * @var NavigationPageLoaderInterface
+     */
     private  $navigationPageLoader;
 
     /**
@@ -28,6 +31,8 @@ class ListingController extends StorefrontController
     }
 
     /**
+     * Custom listing
+     *
      * @Route("/allproducts", name="frontend.listing.index", methods={"GET"})
      * @param SalesChannelContext $context
      * @param Request $request

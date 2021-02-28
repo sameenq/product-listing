@@ -1,43 +1,51 @@
 @import 'abstract/mixins/mixins.scss';
 @import 'abstract/variables/_custom.scss';
 
+/*
+Custom properties
+==================================================
+*/
+
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-span{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
-.counter .count {
-    min-width: 1rem;
-    @include center;
+.input-group .quantity-field {
+    min-width: 2rem;
+    text-align: center;
 }
 
-.counter .plus {
+.input-group .plus {
     @include counter-button;
-    @include center;
 }
 
-.counter .minus {
+.input-group .minus {
     @include counter-button;
-    @include center;
     background-clip: padding-box;
 }
 
-div {
-    @include center;
+.input-group {
+   @include center-div;
 }
 
 .minus:hover,
-.plus:hover{
+.plus:hover {
     background-color: $sw-storefront-assets-color !important;
 }
 
-input{
+input {
     border: 0;
-    width: 2%;
+    width: 4%;
 }
+
+input[type="button"] {
+    outline:0;
+}
+
